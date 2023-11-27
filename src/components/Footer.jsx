@@ -8,18 +8,16 @@ const Footer = () => {
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <h4 className="text-uppercase mb-4">Location</h4>
                             <p className="lead mb-0">
-                                2215 John Daniel Drive
-                                <br />
-                                Clark, MO 65243
+                                Islamabad, Pakistan
                             </p>
                         </div>
 
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <h4 className="text-uppercase mb-4">Around the Web</h4>
-                            <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-twitter"></i></a>
-                            <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-linkedin-in"></i></a>
-                            <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-dribbble"></i></a>
+                            <a className="btn btn-outline-light btn-social mx-1" href="https://wa.link/jczjvd" target="_blank"><i className="fab fa-fw fa-whatsapp"></i></a>
+                            <a className="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/aber049?mibextid=ZbWKwL" target="_blank"><i className="fab fa-fw fa-facebook-f"></i></a>
+                            <a className="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/abeera-zafar/" target="_blank"><i className="fab fa-fw fa-linkedin-in"></i></a>
+                            <a className="btn btn-outline-light btn-social mx-1" href="http://t.me/AbeeraZafar" target="_blank"><i className="fab fa-fw fa-telegram"></i></a>
                         </div>
 
                         <div className="col-lg-4">
@@ -34,7 +32,12 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright py-4 text-center text-white">
-                <div className="container"><small>Copyright &copy; Your Website 2023</small></div>
+                {/* add year dynamically */}
+                <div className="container"><small>Copyright <a href="/">Abeera Zafar</a> {""}
+                    {
+                        new Date().getFullYear()
+                    }
+                </small></div>
             </div>
 
         </>

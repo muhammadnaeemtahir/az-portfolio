@@ -1,14 +1,18 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({ content }) => {
+    const { title, subtitle } = content;
+
     return (
         <>
-            <header className="masthead bg-primary text-white text-center">
+            <header className="masthead masthead-bg text-white text-center" style={{
+                backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0% 100%), url('./src/assets/heros/hero-bg.jpg')`,
+            }}>
                 <div className="container d-flex align-items-center flex-column">
 
-                    <img className="masthead-avatar mb-5" src="./src/assets/img/profile-pic.png" alt="abeera zafar's image" />
+                    <img className="masthead-avatar mb-5" src="./src/assets/img/abeera-zafar.png" alt="abeera zafar's image" />
 
-                    <h1 className="masthead-heading text-uppercase mb-0">Abeera Zafar</h1>
+                    <h1 className="masthead-heading text-uppercase mb-0">{title}</h1>
 
                     <div className="divider-custom divider-light">
                         <div className="divider-custom-line"></div>
@@ -16,7 +20,7 @@ const Hero = () => {
                         <div className="divider-custom-line"></div>
                     </div>
 
-                    <p className="masthead-subheading font-weight-light mb-0">Transforming Ideas into Engaging Designs, Compelling Social Media Content, <br /> and Polished Writing Across All Niches.</p>
+                    <p className="masthead-subheading font-weight-light mb-0">{subtitle}</p>
                 </div>
             </header>
         </>

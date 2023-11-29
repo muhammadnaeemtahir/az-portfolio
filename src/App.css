@@ -12784,6 +12784,13 @@ html {
     padding-bottom: 6rem;
 }
 
+.masthead-bg {
+    background-color: var(--bs-primary);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .masthead .masthead-heading {
     font-size: 2.75rem;
     line-height: 2.75rem;
@@ -12866,4 +12873,30 @@ html {
 
 .copyright {
     background-color: #1a252f;
+}
+
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+    animation: updown 3s ease-in-out infinite 1s;
+}
+
+.floating-whatsapp-btn:hover {
+    animation: none;
+}
+
+
+@keyframes updown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }

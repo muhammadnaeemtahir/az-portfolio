@@ -11,7 +11,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.send('service_964izhk', 'template_z3yizjo', {
+        emailjs.send('service_e3fn33z', 'template_9301kdv', {
             to_name: "abeeraaber049@gmail.com",
             from_name: userName,
             message: userMessage,

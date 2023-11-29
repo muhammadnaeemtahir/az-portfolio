@@ -1,21 +1,23 @@
-import { useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
 
 // import components
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Portfolio from './components/Portfolio';
-import About from './components/About';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Whatsapp from "./components/Whatsapp";
+
+// pages
+import Home from './components/pages/Home';
+import Blogs from './components/pages/Blogs';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <Portfolio />
-      <About />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blogs" element={<Blogs />} />
+      </Routes>
+      <Whatsapp />
       <Footer />
     </>
   );

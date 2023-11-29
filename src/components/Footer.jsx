@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Footer = () => {
     return (
         <>
@@ -32,12 +34,19 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright py-4 text-center text-white">
-                {/* add year dynamically */}
-                <div className="container"><small>Copyright <a href="/">Abeera Zafar</a> {""}
-                    {
-                        new Date().getFullYear()
-                    }
-                </small></div>
+                <div className="container">
+                    {/* <small>
+                        &copy; {new Date().getFullYear()} <Link to="/">Abeera Zafar</Link> | All rights reserved | eBook Design Portfolio
+                    </small> */}
+
+                    <small> &copy; {" "}
+                        {
+                            new Date().getFullYear()
+                        }
+                        {" "}
+                        <Link to="/" className="text-decoration-none">Abeera Zafar</Link> {""} | All rights reserved | eBook Design Portfolio
+                    </small>
+                </div>
             </div>
 
         </>

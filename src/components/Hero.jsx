@@ -1,16 +1,16 @@
 import React from 'react'
 
+import abeeraZafar from '../assets/img/abeera-zafar.png'
+
 const Hero = ({ content }) => {
     const { title, subtitle } = content;
 
     return (
         <>
-            <header className="masthead masthead-bg text-white text-center" style={{
-                backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0% 100%), url('./src/assets/heros/hero-bg.jpg')`,
-            }}>
+            <header className="masthead masthead-bg text-white text-center">
                 <div className="container d-flex align-items-center flex-column">
 
-                    <img className="masthead-avatar mb-5" src="./src/assets/img/abeera-zafar.png" alt="abeera zafar's image" />
+                    <img className="masthead-avatar mb-5" src={abeeraZafar} alt="abeera zafar's image" />
 
                     <h1 className="masthead-heading text-uppercase mb-0">{title}</h1>
 

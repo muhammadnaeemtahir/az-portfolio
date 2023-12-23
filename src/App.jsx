@@ -11,6 +11,7 @@ import Home from './components/pages/Home';
 import Blogs from './components/pages/Blogs';
 import EbooksDesigning from './components/pages/EbooksDesigning';
 import EbookDetails from './components/pages/EbookDetails';
+import KDPDesigns from './components/pages/KDPDesigns';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/ebooks-designing" element={<EbooksDesigning />} />
         <Route path="/ebook-details" element={<EbookDetails />} />
+        <Route path="/kdp-designs" element={<KDPDesigns />} />
       </Routes>
       <Whatsapp />
       <Footer />

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react'; // Import useState and useEffect
+import { useState, useEffect } from 'react';
 import Hero from '../Hero';
 import Ebooks from '../../data/Ebooks.json';
 
@@ -14,7 +14,7 @@ const EbooksDesigning = () => {
                     const thumbnailModule = await import(`../../assets/${ebook.thumbnail}`);
                     thumbnailsObject[ebook.id] = thumbnailModule.default;
                 } catch (error) {
-                    console.error(`Error importing thumbnail for ${ebook.title}:`, error);
+                    console.error(`Error importing thumbnail for ${ebook.id}:`, error);
                 }
             }
             setThumbnails(thumbnailsObject);

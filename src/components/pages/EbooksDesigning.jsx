@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import Hero from '../Hero';
 
-import Ebook1 from '../../assets/mockups/ebook-1.png';
+// import Ebook1 from '../assets/img/abeera-zafar.png';
 
 const EbooksDesigning = () => {
     const heroContent = {
@@ -25,9 +25,9 @@ const EbooksDesigning = () => {
                                             Financial Empowerment Guide <i className="fas fa-arrow-right"></i>
                                         </div>
                                     </div>
-                                    <img src={Ebook1} alt="ebook" className="img-fluid rounded ebook-img" style={{
+                                    {/* <img src={Ebook1} alt="ebook" className="img-fluid rounded ebook-img" style={{
                                         objectFit: 'cover',
-                                    }} />
+                                    }} /> */}
                                 </div>
                             </Link>
                         </div>

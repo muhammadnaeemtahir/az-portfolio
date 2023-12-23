@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom'
 
+import ServiceOne from '../assets/services/1.png'
+import ServiceTwo from '../assets/services/2.png'
+import ServiceThree from '../assets/services/3.png'
+
 
 const Portfolio = () => {
     return (
@@ -23,7 +27,7 @@ const Portfolio = () => {
                                     <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="./src/assets/services/1.png" alt="..." />
+                                    <img className="img-fluid" src={ServiceOne} alt="..." />
                                 </div>
                             </Link>
                         </div>
@@ -33,7 +37,7 @@ const Portfolio = () => {
                                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img className="img-fluid" src="./src/assets/services/2.png" alt="..." />
+                                <img className="img-fluid" src={ServiceTwo} alt="..." />
                             </div>
                         </div>
 
@@ -42,7 +46,7 @@ const Portfolio = () => {
                                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img className="img-fluid" src="./src/assets/services/3.png" alt="..." />
+                                <img className="img-fluid" src={ServiceThree} alt="..." />
                             </div>
                         </div>
                     </div>

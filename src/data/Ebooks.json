@@ -1,0 +1,144 @@
+[
+    {
+        "id": "1",
+        "title": "Recruitment Excellence Guidebook",
+        "language": "English",
+        "description": "Exclusively designed for staffing agencies, this comprehensive ebook (PDF) offers strategic insights for achieving excellence in staff recruitment.",
+        "formats": [
+            "PDF",
+            "Editable PDF"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/recruitment-excellence-guidebook.png",
+        "images": [
+            "https://www.designbro.com/wp-content/uploads/2019/05/Recruitment-Excellence-Guidebook-1.jpg"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Financial Mastery Guide (German Edition)",
+        "language": "German",
+        "description": "Tailored for accounting and finance professionals, this comprehensive guide is available in Ebook, Paperback, and Hardcover formats, offering diverse options for knowledge consumption.",
+        "formats": [
+            "Ebook (PDF)",
+            "Paperback",
+            "Hardcover",
+            "Editable PDF"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/financial-mastery-guide.png",
+        "images": [
+            "[image_url_2_1]",
+            "[image_url_2_2]"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Crypto Insights Handbook",
+        "language": "English",
+        "description": "Unlock the world of cryptocurrency with this insightful handbook, catering to both beginners and enthusiasts alike.",
+        "formats": [
+            "Ebook (PDF)",
+            "Paperback",
+            "Hardcover"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/crypto-insights-handbook.png",
+        "images": [
+            "[image_url_3]"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Hiring Mastery Guide",
+        "language": "English",
+        "description": "Elevate your recruitment game with this comprehensive guide, designed to enhance hiring processes for businesses of all scales.",
+        "formats": [
+            "Ebook (PDF)"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/hiring-mastery-guide.png",
+        "images": [
+            "[image_url_4]"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Empowerment Blueprint: Navigating Challenges for Black Success",
+        "language": "English",
+        "description": "Empower individuals with insights and strategies in this guide, focusing on navigating challenges and building a path to success.",
+        "formats": [
+            "Ebook (PDF)"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/empowerment-blueprint.png",
+        "images": [
+            "[image_url_5]"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Business Credit Blueprint: Financial Empowerment Guide",
+        "language": "English",
+        "description": "Unlock the potential of business credit with this comprehensive guide, providing essential insights for entrepreneurs and business owners.",
+        "formats": [
+            "Ebook (PDF)"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/business-credit-blueprint.png",
+        "images": [
+            "[image_url_6]"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Hebrew Kids Stories Workbook (KDP Edition)",
+        "language": "Hebrew",
+        "description": "Spark creativity and learning with this engaging Kids Stories Workbook designed for young readers.",
+        "formats": [
+            "Ebook (PDF)",
+            "Paperback",
+            "Hardcover",
+            "Editable PDF"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/hebrew-kids-stories-workbook.png",
+        "images": [
+            "[image_url_7]"
+        ]
+    },
+    {
+        "id": "8",
+        "title": "NutriFit Guide: Monthly Meal Planning and Nutrition Design",
+        "language": "English",
+        "description": "Facilitate healthy living with this comprehensive guide, offering monthly meal plans and nutrition insights for individuals seeking a balanced lifestyle.",
+        "formats": [
+            "Ebook (PDF)",
+            "Paperback",
+            "Hardcover",
+            "Editable PDF"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/nutrifit-guide.png",
+        "images": [
+            "[image_url_8]"
+        ]
+    },
+    {
+        "id": "9",
+        "title": "Nourish and Thrive: Self-Care and Cookbook",
+        "language": "English",
+        "description": "Embrace self-care with this dual-purpose guide, seamlessly blending self-care practices with a delightful cookbook for a holistic approach to well-being.",
+        "formats": [
+            "Ebook (PDF)",
+            "Paperback",
+            "Hardcover",
+            "Editable PDF"
+        ],
+        "deliverables": "Source File + Editable Link Access",
+        "thumbnail": "../assets/mockups/nourish-and-thrive.png",
+        "images": [
+            "[image_url_9]"
+        ]
+    }
+]

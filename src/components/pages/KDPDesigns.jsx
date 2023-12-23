@@ -45,6 +45,7 @@ const KDPDesigns = () => {
                                             objectFit: 'cover',
                                             height: '280px',
                                         }}
+                                        loading='lazy'
                                     />
                                 </div>
                             </Link>

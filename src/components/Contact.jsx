@@ -17,17 +17,16 @@ const Contact = () => {
             message: userMessage,
             reply_to: userEmail,
             from_email: userEmail,
-        }, 'DkyQ_XZu4Jz52uToT').then((result) => {
-            const alertContent = `<div className="text-success bg-success bg-opacity-25 p-1 rounded mt-2">
-                <small> <bold>Message sent successfully!</bold> We'll get back to you as soon as possible.</small>
-              </div>`;
+        }, 'UbImSamVMKxAGqaY6').then((result) => {
+            const alert = document.querySelector('.alert-success');
+            alert.classList.remove('d-none');
+            alert.classList.add('d-block');
+            setTimeout(() => {
+                alert.classList.remove('d-block');
+                alert.classList.add('d-none');
+            }, 3000);
+            form.current.reset();
 
-            document.getElementById('success-message').innerHTML = alertContent;
-            if (document.getElementById('success-message').innerHTML === alertContent) {
-                setTimeout(() => {
-                    document.getElementById('success-message').innerHTML = '';
-                }, 1000);
-            }
 
             setUserName('');
             setUserEmail('');
@@ -52,7 +51,7 @@ const Contact = () => {
     return (
         <section className="page-section" id="contact">
             <div className="container">
-                <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
                 <div className="divider-custom">
                     <div className="divider-custom-line"></div>
                     <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
@@ -104,7 +103,13 @@ const Contact = () => {
                                 Send a message
                             </button>
                             <div className="col-12 mb-20">
-                                <p id="success-message"></p>
+                                {/* add bootstrap alert */}
+                                <div className="alert alert-success d-none mt-3" role="alert">
+                                    <b>
+                                        Your email has been sent successfully. {" "}
+                                    </b>
+                                    We will get back to you as soon as possible.
+                                </div>
                             </div>
                         </form>
                     </div>

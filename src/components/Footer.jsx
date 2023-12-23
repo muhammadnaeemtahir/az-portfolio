@@ -25,9 +25,7 @@ const Footer = () => {
                         <div className="col-lg-4">
                             <h4 className="text-uppercase mb-4">About Freelancer</h4>
                             <p className="lead mb-0">
-                                Freelance is a free to use, MIT licensed Bootstrap theme created by
-                                <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                .
+                                Abeera Zafar, Your Dedicated Creative Virtuoso: Merging expertise in Canva, Illustrator, and Photoshop, I've seamlessly transitioned from science to marketing writing. Having collaborated with 200 businesses from diverse niches, let's explore how my dedication and design prowess can elevate your project—beyond categories beyond expectations.
                             </p>
                         </div>
                     </div>
@@ -39,12 +37,17 @@ const Footer = () => {
                         &copy; {new Date().getFullYear()} <Link to="/">Abeera Zafar</Link> | All rights reserved | eBook Design Portfolio
                     </small> */}
 
-                    <small> &copy; {" "}
+                    <small>  {" "}
+                        "Imaginarium Gazette: &copy;
                         {
                             new Date().getFullYear()
                         }
+                        {"  "}
+                        <Link to="/">
+                            Abeera Zafar
+                        </Link>
                         {" "}
-                        <Link to="/" className="text-decoration-none">Abeera Zafar</Link> {""} | All rights reserved | eBook Design Portfolio
+                        | Sculpting Ideas into Art
                     </small>
                 </div>
             </div>

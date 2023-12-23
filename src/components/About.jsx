@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const About = () => {
     return (
         <>
@@ -21,10 +23,10 @@ const About = () => {
                     </div>
 
                     <div className="text-center mt-4">
-                        <a className="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <Link className="btn btn-xl btn-outline-light" to="/blogs">
                             Read More
                             <i className="fas fa-arrow-right ms-2"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

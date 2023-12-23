@@ -12613,6 +12613,7 @@ fieldset:disabled .btn {
 html {
     height: 100%;
     scroll-padding-top: calc(4.5rem - 1px);
+    scroll-behavior: smooth;
 }
 
 .page-section {
@@ -12901,3 +12902,42 @@ html {
         transform: translateY(-10px);
     }
 }
+
+/* testimonail cards: start */
+
+.testimonials {
+    background-color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/img/testimonial-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/* testimonail cards: end */
+
+/* ebook card: start */
+.ebook-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* ebook card: end */

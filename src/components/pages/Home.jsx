@@ -2,6 +2,8 @@
 import Hero from '../Hero';
 import Portfolio from '../Portfolio';
 import About from '../About';
+import Contact from '../Contact';
+import Testimonials from '../Testimonials';
 
 const Home = () => {
     const heroContent = {
@@ -14,6 +16,8 @@ const Home = () => {
             <Hero content={heroContent} />
             <Portfolio />
             <About />
+            <Testimonials />
+            <Contact />
         </>
     )
 }

@@ -25,7 +25,7 @@ const Footer = () => {
                         <div className="col-lg-4">
                             <h4 className="text-uppercase mb-4">About Freelancer</h4>
                             <p className="lead mb-0">
-                                Abeera Zafar, Your Dedicated Creative Virtuoso: Merging expertise in Canva, Illustrator, and Photoshop, I've seamlessly transitioned from science to marketing writing. Having collaborated with 200 businesses from diverse niches, let's explore how my dedication and design prowess can elevate your project—beyond categories beyond expectations.
+                                Your Dedicated Creative Virtuoso: Merging expertise in Canva, Illustrator, and Photoshop.
                             </p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="copyright py-4 text-center text-white">
                 <div className="container">
                     <small>  {" "}
-                        Imaginarium Gazette: &copy;
+                        &copy;
                         {
                             new Date().getFullYear()
                         }

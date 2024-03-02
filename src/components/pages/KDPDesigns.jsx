@@ -1,27 +1,8 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../Hero';
 import KDPbooksData from '../../data/KDPbooks.json';
 
 const KDPDesigns = () => {
-    const [thumbnails, setThumbnails] = useState({});
-
-    useEffect(() => {
-        const importThumbnails = async () => {
-            const thumbnailsObject = {};
-            for (const kdpbook of KDPbooksData) {
-                try {
-                    const thumbnailModule = await import(`../../assets/${kdpbook.thumbnail}`);
-                    thumbnailsObject[kdpbook.id] = thumbnailModule.default;
-                } catch (error) {
-                    console.error(`Error importing thumbnail for ${kdpbook.id}:`, error);
-                }
-            }
-            setThumbnails(thumbnailsObject);
-        };
-
-        importThumbnails();
-    }, []);
 
     const heroContent = {
         title: 'KDP Books Designing',
@@ -38,7 +19,7 @@ const KDPDesigns = () => {
                             <Link to="#">
                                 <div className="portfolio-item mx-auto card ebook-card">
                                     <img
-                                        src={thumbnails[kdpbook.id] || ''}
+                                        src={kdpbook.thumbnail}
                                         alt={kdpbook.title}
                                         className="img-fluid rounded ebook-img"
                                         style={{

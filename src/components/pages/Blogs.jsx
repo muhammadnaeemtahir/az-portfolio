@@ -32,7 +32,7 @@ const Blogs = () => {
                         {
                             articles.map((article, index) => {
                                 return (
-                                    <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                    <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={index}>
                                         <Link to={article.link} target='_blank' className='text-decoration-none'>
                                             <div key={index} className="card h-100">
                                                 <img src={(article['description']).toString().match(/<img[^>]+src="([^">]+)"/)[1]} className="card-img-top" alt={article.title} style={{

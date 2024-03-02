@@ -1,38 +1,38 @@
 [
     {
         "id": "1",
-        "thumbnail": "../assets/mockups/Amazon front back cover-kdp-1.png"
+        "thumbnail": "/src/assets/mockups/Amazon front back cover-kdp-1.png"
     },
     {
         "id": "2",
-        "thumbnail": "../assets/mockups/Amazon front back cover-kdp-2.png"
+        "thumbnail": "/src/assets/mockups/Amazon front back cover-kdp-2.png"
     },
     {
         "id": "3",
-        "thumbnail": "../assets/mockups/Amazon front back cover-kdp-3.png"
+        "thumbnail": "/src/assets/mockups/Amazon front back cover-kdp-3.png"
     },
     {
         "id": "4",
-        "thumbnail": "../assets/mockups/Amazon front back cover-kdp-4.png"
+        "thumbnail": "/src/assets/mockups/Amazon front back cover-kdp-4.png"
     },
     {
         "id": "5",
-        "thumbnail": "../assets/mockups/Amazon front back cover-kdp-5.png"
+        "thumbnail": "/src/assets/mockups/Amazon front back cover-kdp-5.png"
     },
     {
         "id": "6",
-        "thumbnail": "../assets/mockups/Amazon front back cover-kdp-6.png"
+        "thumbnail": "/src/assets/mockups/Amazon front back cover-kdp-6.png"
     },
     {
         "id": "7",
-        "thumbnail": "../assets/mockups/kids gaming cards-1.png"
+        "thumbnail": "/src/assets/mockups/kids gaming cards-1.png"
     },
     {
         "id": "8",
-        "thumbnail": "../assets/mockups/kids gaming cards-2.png"
+        "thumbnail": "/src/assets/mockups/kids gaming cards-2.png"
     },
     {
         "id": "9",
-        "thumbnail": "../assets/mockups/kids gaming cards-3.png"
+        "thumbnail": "/src/assets/mockups/kids gaming cards-3.png"
     }
 ]

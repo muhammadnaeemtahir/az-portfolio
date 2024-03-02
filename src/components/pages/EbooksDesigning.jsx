@@ -1,27 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import Hero from '../Hero';
 import Ebooks from '../../data/Ebooks.json';
 
 const EbooksDesigning = () => {
-    const [thumbnails, setThumbnails] = useState({});
-
-    // useEffect(() => {
-    //     const importThumbnails = async () => {
-    //         const thumbnailsObject = {};
-    //         for (const ebook of Ebooks) {
-    //             try {
-    //                 const thumbnailModule = await import(`../../assets/${ebook.thumbnail}`);
-    //                 thumbnailsObject[ebook.id] = thumbnailModule.default;
-    //             } catch (error) {
-    //                 console.error(`Error importing thumbnail for ${ebook.id}:`, error);
-    //             }
-    //         }
-    //         setThumbnails(thumbnailsObject);
-    //     };
-
-    //     importThumbnails();
-    // }, []);
 
     const heroContent = {
         title: 'eBooks Designing',
@@ -52,6 +33,7 @@ const EbooksDesigning = () => {
                                                 objectFit: 'cover',
                                                 height: '280px',
                                             }}
+                                            loading='lazy'
                                         />
                                     </div>
                                 </Link>

@@ -9,7 +9,7 @@
             "Editable PDF"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/recruitment-excellence-guidebook.png",
+        "thumbnail": "src/assets/mockups/recruitment-excellence-guidebook.png",
         "images": [
             "https://www.designbro.com/wp-content/uploads/2019/05/Recruitment-Excellence-Guidebook-1.jpg"
         ]
@@ -26,7 +26,7 @@
             "Editable PDF"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/financial-mastery-guide.png",
+        "thumbnail": "src/assets/mockups/financial-mastery-guide.png",
         "images": [
             "[image_url_2_1]",
             "[image_url_2_2]"
@@ -43,7 +43,7 @@
             "Hardcover"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/crypto-insights-handbook.png",
+        "thumbnail": "src/assets/mockups/crypto-insights-handbook.png",
         "images": [
             "[image_url_3]"
         ]
@@ -57,7 +57,7 @@
             "Ebook (PDF)"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/hiring-mastery-guide.png",
+        "thumbnail": "src/assets/mockups/hiring-mastery-guide.png",
         "images": [
             "[image_url_4]"
         ]
@@ -71,7 +71,7 @@
             "Ebook (PDF)"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/empowerment-blueprint.png",
+        "thumbnail": "src/assets/mockups/empowerment-blueprint.png",
         "images": [
             "[image_url_5]"
         ]
@@ -85,7 +85,7 @@
             "Ebook (PDF)"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/business-credit-blueprint.png",
+        "thumbnail": "src/assets/mockups/business-credit-blueprint.png",
         "images": [
             "[image_url_6]"
         ]
@@ -102,7 +102,7 @@
             "Editable PDF"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/hebrew-kids-stories-workbook.png",
+        "thumbnail": "src/assets/mockups/hebrew-kids-stories-workbook.png",
         "images": [
             "[image_url_7]"
         ]
@@ -119,7 +119,7 @@
             "Editable PDF"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/nutrifit-guide.png",
+        "thumbnail": "src/assets/mockups/nutrifit-guide.png",
         "images": [
             "[image_url_8]"
         ]
@@ -136,7 +136,7 @@
             "Editable PDF"
         ],
         "deliverables": "Source File + Editable Link Access",
-        "thumbnail": "../assets/mockups/nourish-and-thrive.png",
+        "thumbnail": "src/assets/mockups/nourish-and-thrive.png",
         "images": [
             "[image_url_9]"
         ]

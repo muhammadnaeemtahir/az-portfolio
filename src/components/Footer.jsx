@@ -33,12 +33,8 @@ const Footer = () => {
             </footer>
             <div className="copyright py-4 text-center text-white">
                 <div className="container">
-                    {/* <small>
-                        &copy; {new Date().getFullYear()} <Link to="/">Abeera Zafar</Link> | All rights reserved | eBook Design Portfolio
-                    </small> */}
-
                     <small>  {" "}
-                        "Imaginarium Gazette: &copy;
+                        Imaginarium Gazette: &copy;
                         {
                             new Date().getFullYear()
                         }

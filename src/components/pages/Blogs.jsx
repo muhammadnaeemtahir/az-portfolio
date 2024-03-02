@@ -35,13 +35,13 @@ const Blogs = () => {
                                     <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
                                         <Link to={article.link} target='_blank' className='text-decoration-none'>
                                             <div key={index} className="card h-100">
-                                                <img src={article.thumbnail} className="card-img-top" alt={article.title} style={{
+                                                <img src={(article['description']).toString().match(/<img[^>]+src="([^">]+)"/)[1]} className="card-img-top" alt={article.title} style={{
                                                     height: '170px',
                                                     objectFit: 'cover'
 
                                                 }} />
                                                 <div className="card-body">
-                                                    <h5 className="card-title">{article.title}</h5>
+                                                    <h5 className="card-title text-truncate">{article.title}</h5>
                                                 </div>
                                             </div>
                                         </Link>

@@ -45,17 +45,30 @@ const Testimonials = () => {
                                 }}>
                                     <div className="card-body">
                                         <p className="text-end mb-0">
-                                            <i class="fa-solid fa-quote-right text-secondary fa-3x"></i>
+                                            <i className="fa-solid fa-quote-right text-secondary fa-3x"></i>
                                         </p>
                                         <p className='card-text text-truncate'>
                                             {testimonial.review}
                                         </p>
                                         <div className="user-info">
                                             <h5 className="card-title mb-0">{testimonial.name}</h5>
-                                            <img src={`https://flagsapi.com/${testimonial.country}/flat/64.png`} style={{
-                                                width: '35px',
-                                                height: '35px'
-                                            }} alt={testimonial.country} />
+                                            <p>
+                                                {testimonial.country ? (
+                                                    <img
+                                                        src={`https://flagsapi.com/${testimonial.country}/flat/64.png`}
+                                                        style={{
+                                                            width: '35px',
+                                                            height: '35px'
+                                                        }}
+                                                        alt={testimonial.country}
+                                                    />
+                                                ) : (
+                                                    testimonial.country ? null : testimonial.location || 'Unknown Location'
+                                                )}
+                                            </p>
+
+
+
                                         </div>
                                     </div>
                                 </div>

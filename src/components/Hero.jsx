@@ -1,6 +1,6 @@
 import React from 'react'
 
-import abeeraZafar from '../assets/img/abeera-zafar.png'
+import abeeraZafar from '../assets/img/abeera-zafar-02.png'
 
 const Hero = ({ content }) => {
     const { title, subtitle } = content;

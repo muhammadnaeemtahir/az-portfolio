@@ -16,7 +16,7 @@ import thumbnail9 from '../../assets/mockups/nourish-and-thrive.png'
 
 const EbooksDesigning = () => {
 
-    const placerholders = {
+    const placeholders = {
         1: thumbnail1,
         2: thumbnail2,
         3: thumbnail3,
@@ -44,23 +44,52 @@ const EbooksDesigning = () => {
                             Ebooks && Ebooks.length >= 0 &&
                             Ebooks.map((ebook, id) => (
                                 <div className="col-md-4 col-sm-6 col-12 mb-3" key={ebook.id}>
-                                    <Link to={`/ebook-details/${ebook.id}`}>
-                                        <div className="portfolio-item mx-auto card ebook-card">
-                                            <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div className="portfolio-item-caption-content text-center text-white">
-                                                    {ebook.title} <i className="fas fa-arrow-right"></i>
+                                    <button type="button" className="card portfolio-item mx-auto ebook-card p-0" data-bs-toggle="modal" data-bs-target={`#exampleModal-${id + 1}`}>
+                                        <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div className="portfolio-item-caption-content text-center text-white">
+                                                {ebook.title}
+                                                <i className="fas fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                        <img
+                                            src={placeholders[id + 1]}
+                                            alt={ebook.title}
+                                            className="img-fluid rounded ebook-img w-100"
+                                            style={{ objectFit: 'cover', height: '280px' }}
+                                            loading="lazy"
+                                        />
+                                    </button>
+
+                                    <div className="modal fade" id={`exampleModal-${id + 1}`} tabIndex="-1" aria-labelledby={`exampleModalLabel-${id + 1}`} aria-hidden="true">
+                                        <div className="modal-dialog modal-xl">
+                                            <div className="modal-content">
+                                                <div className="modal-header border-0">
+                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div className="modal-body">
+                                                    <div className="row">
+                                                        <div className="col-md-6">
+                                                            <img
+                                                                src={placeholders[id + 1]}
+                                                                alt={ebook.title}
+                                                                className="img-fluid rounded ebook-img w-100"
+                                                                loading="lazy"
+                                                            />
+                                                        </div>
+                                                        <div className="col-md-6">
+                                                            <h5 className='mb-0 text-primary'>{ebook.title}</h5>
+                                                            <p>
+                                                                <small className='text-secondary'>{ebook.language}</small>
+                                                            </p>
+                                                            <p>{ebook.description}</p>
+                                                            <p className="mb-0"><strong className="text-secondary">Formats:</strong> {ebook.formats.join(', ')}</p>
+                                                            <p className="mb-0"><strong className="text-secondary">Deliverables:</strong> {ebook.deliverables}</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                            <img
-                                                src={placerholders[id + 1]}
-                                                alt={ebook.title}
-                                                className="img-fluid rounded ebook-img w-100"
-                                                style={{ objectFit: 'cover', height: '280px' }}
-                                                loading="lazy"
-                                            />
                                         </div>
-                                    </Link>
+                                    </div>
                                 </div>
                             ))}
                     </div>

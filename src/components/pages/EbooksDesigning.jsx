@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Hero from '../Hero';
 
 import Ebooks from '../../data/Ebooks.json'
@@ -30,8 +29,7 @@ const EbooksDesigning = () => {
 
     const heroContent = {
         title: 'eBooks Designing',
-        subtitle: `I have designed eBooks for various clients in different niches. I have designed eBooks for
-         clients in the following niches:`,
+        subtitle: `I specialize in designing and redesigning various publications, including ebooks, print books, book covers, Kindle books, KDP books Nook books, flyers and brochures.`,
     };
 
     return (

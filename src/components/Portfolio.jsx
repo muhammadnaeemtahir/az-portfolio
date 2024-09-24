@@ -39,7 +39,7 @@ const Portfolio = () => {
                                 <div className="portfolio-item mx-auto">
                                     <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div className="portfolio-item-caption-content text-center text-white">
-                                            KDP and Kindle
+                                            KDP (Kindle & Print books)
                                         </div>
                                     </div>
                                     <img className="img-fluid" src={ServiceTwo} loading='lazy' alt="..." />

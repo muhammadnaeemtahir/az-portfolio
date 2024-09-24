@@ -24,11 +24,11 @@ const EbookDetails = () => {
                     <p className="mb-4">{project.description}</p>
                     <p className="mb-0"><strong className="text-secondary">Formats:</strong> {project.formats.join(', ')}</p>
                     <p className="mb-0"><strong className="text-secondary">Deliverables:</strong> {project.deliverables}</p>
-                    {/* {
+                    {
                         project.images && project.images >= 1 &&
                         project.images.map((image, index) => (
                             <img className="img-fluid" key={index} src={image} alt={`Image ${index + 1}`} />
-                        ))} */}
+                        ))}
 
                 </section>
             </div>

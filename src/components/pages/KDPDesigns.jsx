@@ -1,64 +1,83 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Hero from '../Hero';
-import KDPbooksData from '../../data/KDPbooks.json';
-
-// thumbnails
-import thumbnail1 from "../../assets/mockups/Amazon front back cover-kdp-1.png"
-import thumbnail2 from "../../assets/mockups/Amazon front back cover-kdp-2.png"
-import thumbnail3 from "../../assets/mockups/Amazon front back cover-kdp-3.png"
-import thumbnail4 from "../../assets/mockups/Amazon front back cover-kdp-4.png"
-import thumbnail5 from "../../assets/mockups/Amazon front back cover-kdp-5.png"
-import thumbnail6 from "../../assets/mockups/Amazon front back cover-kdp-6.png"
-import thumbnail7 from "../../assets/mockups/kids gaming cards-1.png"
-import thumbnail8 from "../../assets/mockups/kids gaming cards-2.png"
-import thumbnail9 from "../../assets/mockups/kids gaming cards-3.png"
+import KDPBooks from '../../data/KDPBooks.json';  // Use KDPBooks.json instead of Ebooks.json
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 
 const KDPDesigns = () => {
 
-    const placeholders = {
-        1: thumbnail1,
-        2: thumbnail2,
-        3: thumbnail3,
-        4: thumbnail4,
-        5: thumbnail5,
-        6: thumbnail6,
-        7: thumbnail7,
-        8: thumbnail8,
-        9: thumbnail9,
-    }
-
     const heroContent = {
-        title: 'KDP Books Designing',
-        subtitle: `I have designed KDP books for various clients in different niches. I have designed eBooks for clients in the following niches:`,
+        title: 'KDP (Kindle & Print Books) Designing',
+        subtitle: `I specialize in designing and redesigning various publications, including ebooks, print books, book covers, Kindle books, KDP books, Nook books, flyers, and brochures.`,
     };
 
     return (
         <>
             <Hero content={heroContent} />
-            <section className='container my-5'>
-                <div className="row">
-                    {KDPbooksData.map((kdpbook, index) => (
-                        <div className="col-md-4 col-sm-6 col-12 mb-3" key={index}>
-                            <Link to="#">
-                                <div className="portfolio-item mx-auto card ebook-card">
-                                    <img
-                                        src={placeholders[index + 1]}
-                                        alt={kdpbook.title}
-                                        className="img-fluid rounded ebook-img"
-                                        style={{
-                                            objectFit: 'cover',
-                                            height: '280px',
-                                        }}
-                                        loading='lazy'
-                                    />
+            <section className='my-5'>
+                <div className="container portfolio">
+                    <div className="row">
+                        {
+                            KDPBooks && KDPBooks.length > 0 &&
+                            KDPBooks.map((book, id) => (
+                                <div className="col-md-4 col-sm-6 col-12 mb-3" key={book.id}>
+                                    <button type="button" className="card portfolio-item mx-auto ebook-card p-0" data-bs-toggle="modal" data-bs-target={`#exampleModal-${id + 1}`}>
+                                        <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div className="portfolio-item-caption-content text-center text-white">
+                                                {book.title}
+                                                <i className="fas fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                        <img
+                                            src={book.images[0]}  // First image in the array as thumbnail
+                                            alt={book.title}
+                                            className="img-fluid rounded ebook-img w-100"
+                                            style={{ objectFit: 'cover', height: '280px' }}
+                                            loading="lazy"
+                                        />
+                                    </button>
+
+                                    {/* Modal for displaying the book details and carousel */}
+                                    <div className="modal fade" id={`exampleModal-${id + 1}`} tabIndex="-1" aria-labelledby={`exampleModalLabel-${id + 1}`} aria-hidden="true">
+                                        <div className="modal-dialog modal-xl">
+                                            <div className="modal-content">
+                                                <div className="modal-header border-0">
+                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div className="modal-body">
+                                                    <div className="row">
+                                                        <div className="col-md-6">
+                                                            {/* Carousel for displaying all images */}
+                                                            <Carousel>
+                                                                {book.images.map((image, index) => (
+                                                                    <div key={index}>
+                                                                        <img src={image} alt={`${book.title} image ${index + 1}`} className="img-fluid rounded ebook-img w-100" />
+                                                                    </div>
+                                                                ))}
+                                                            </Carousel>
+                                                        </div>
+                                                        <div className="col-md-6">
+                                                            <h5 className='mb-0 text-primary'>{book.title}</h5>
+                                                            <p>
+                                                                <small className='text-secondary'>{book.language}</small>
+                                                            </p>
+                                                            <p><strong className="text-secondary">Description: </strong>{book.description}</p>
+                                                            {/* <p className="mb-0"><strong className="text-secondary">Formats:</strong> {book.formats ? book.formats.join(', ') : 'N/A'}</p> */}
+                                                            <p className="mb-0"><strong className="text-secondary">Deliverables: </strong> {book.deliverables}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </Link>
-                        </div>
-                    ))}
+                            ))
+                        }
+                    </div>
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
 export default KDPDesigns;

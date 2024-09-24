@@ -15,15 +15,21 @@ const About = () => {
                     </div>
 
                     <div className="row">
-                        <div className="col-12 mx-auto">
+                        <div className="col-12 mx-auto text-center">
                             <p className="lead">
-                                Hello! I'm Abeera Zafar🙋, a freelancer with three years of experience in the world of entrepreneurship. Let's go back to October 2020, when I started freelancing, just out of curiosity and a desire to learn. Little did I know that this exploration would turn into a significant professional journey.
+                            𝐒𝐭𝐫𝐮𝐠𝐠𝐥𝐢𝐧𝐠 𝐭𝐨 𝐭𝐮𝐫𝐧 𝐰𝐞𝐛𝐬𝐢𝐭𝐞 𝐯𝐢𝐬𝐢𝐭𝐨𝐫𝐬 𝐢𝐧𝐭𝐨 𝐩𝐚𝐲𝐢𝐧𝐠 𝐜𝐮𝐬𝐭𝐨𝐦𝐞𝐫𝐬? 
+                            </p>
+                            <p className="lead">
+                           You're pouring time and resources into lead generation, but your offers aren't converting.
+                             </p>
+                            <p className="lead">
+                            That's where I come in.
                             </p>
                         </div>
                     </div>
 
                     <div className="text-center mt-4">
-                        <Link className="btn btn-xl btn-outline-light" to="/blogs">
+                        <Link className="btn btn-xl btn-outline-light" to="/DetailedAbout">
                             Read More
                             <i className="fas fa-arrow-right ms-2"></i>
                         </Link>

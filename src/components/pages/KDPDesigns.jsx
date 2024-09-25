@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../Hero';
-import KDPBooks from '../../data/KDPBooks.json';  // Use KDPBooks.json instead of Ebooks.json
+import KDPBooks from '../../data/KDPBooks.json'; 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 

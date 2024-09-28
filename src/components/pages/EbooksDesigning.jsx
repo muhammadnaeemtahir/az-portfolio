@@ -1,8 +1,9 @@
 import React from 'react';
 import Hero from '../Hero';
 import Ebooks from '../../data/Ebooks.json';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 
 const EbooksDesigning = () => {
 

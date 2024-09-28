@@ -10,7 +10,7 @@
         ],
         "deliverables": "Source File + Editable Link Access",
         "images": [
-            "../../assets/ebooks/BlueprintBusinessebook1.png",
+            "/src/assets/ebooks/BlueprintBusinessebook1.png",
             "/src/assets/ebooks/BlueprintBusinessebook2.png"
         ]
     },

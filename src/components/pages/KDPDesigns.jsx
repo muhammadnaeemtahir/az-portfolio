@@ -3,10 +3,12 @@ import Hero from '../Hero';
 
 import KDPBooks from '../../data/KDPbooks.json'
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const KDPDesigns = () => {
+
+    console.log(KDPBooks)
 
     const heroContent = {
         title: 'KDP (Kindle & Print Books) Designing',
